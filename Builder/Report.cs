@@ -84,6 +84,8 @@ namespace BuilderDesignPattern
             return reportBuilder.GetReport();
         }
     }
+
+    // Main
     class Program
     {
         static void Main(string[] args)
