@@ -37,6 +37,8 @@ namespace BuilderDesignPattern
             return reportObject;
         }
     }
+
+    // Concrete Builder ExcelReport
     class ExcelReport : ReportBuilder
     {
         public override void SetReportContent()
@@ -56,6 +58,8 @@ namespace BuilderDesignPattern
             reportObject.ReportType = "Excel";
         }
     }
+
+    // Concrete Builder PDFReport
     public class PDFReport : ReportBuilder
     {
         public override void SetReportContent()
@@ -75,6 +79,8 @@ namespace BuilderDesignPattern
             reportObject.ReportType = "PDF";
         }
     }
+
+    // Define a ReportDirector class
     public class ReportDirector
     {
         public Report MakeReport(ReportBuilder reportBuilder)
