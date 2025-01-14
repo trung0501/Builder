@@ -4,6 +4,7 @@ using System.Text;
 
 namespace BuilderDesignPattern
 {
+    // Create a new report
     public class Report
     {
         public string ReportType { get; set; }
@@ -18,6 +19,8 @@ namespace BuilderDesignPattern
             Console.WriteLine("Footer :" + ReportFooter);
         }
     }
+
+    // Builder Design Pattern
     public abstract class ReportBuilder
     {
         protected Report reportObject;
